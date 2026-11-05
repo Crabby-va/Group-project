@@ -9,7 +9,7 @@ public class Main {
 	Employee[] staff = new Employee[100];
 	
 	public static void main(String[] args) {
-		
+		System.out.println("Hello World!");
 	}
 
 }
