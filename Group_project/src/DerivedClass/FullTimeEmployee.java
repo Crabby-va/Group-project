@@ -3,7 +3,7 @@ package DerivedClass;
 import ParentClass.Employee;
 
 public class FullTimeEmployee extends Employee {
-	double salary;
+	private double salary;
 	
 	//Constructor - when adding new instance variables please change the constructor accordingly!!!
 	public FullTimeEmployee(String name, String lastname, String SSN, double salary) {

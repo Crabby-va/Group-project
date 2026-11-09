@@ -5,7 +5,7 @@ import ParentClass.Employee;
 
 
 public class PartTimeEmployee extends Employee {
-	int working_hours;
+	private int working_hours;
 	private final double HOURLY_RATE = 400; //The hourly rate paid. final meaning it cannot change.
 	
 	//Constructor - when adding new instance variables please change the constructor accordingly!!!

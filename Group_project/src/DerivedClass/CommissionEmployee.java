@@ -3,7 +3,7 @@ package DerivedClass;
 import ParentClass.Employee;
 
 public class CommissionEmployee extends Employee {
-	int sales_amount;
+	private int sales_amount;
 	protected final double COMMISSION_PER_SALE = 700;  //the euro quantity for each sale. Which is protected, so the child class can use it.
 	
 	//Constructor - when adding new instance variables please change the constructor accordingly!!!

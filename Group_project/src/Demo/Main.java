@@ -49,7 +49,6 @@ public class Main {
 				case 4:
 					printByContract();
 					break;
-				case 0:		//0 and 5 both close the program
 				case 5:
 					System.out.println(LINE);
 					System.out.println("      Thank you for choosing our program");
@@ -58,7 +57,7 @@ public class Main {
 				default:	//any other number
 					System.out.println("Choose between the offered options !");
 			}
-		} while (option != 0 && option != 5);
+		} while (option != 5);
 		input.close();
 	}
 

@@ -14,7 +14,7 @@ public class BaseCommissionEmployee extends CommissionEmployee {
 	//the inhereted method from employee abstract class
 	public double income() {//For calculating base salary + commission + 10% bonus.
 		return BASE_SALARY + super.income() + BASE_SALARY * BONUS_RATE;
-		}
+	}
 	
 	//another inhereted method from employee abstract class
 	public String toString(String name, String lastname, String social_security) {
