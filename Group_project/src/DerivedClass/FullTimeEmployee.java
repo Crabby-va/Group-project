@@ -12,6 +12,7 @@ public class FullTimeEmployee extends Employee {
 	}
 
 	//the inhereted method from employee abstract class
+	@Override
 	public double income() {
 		return 0;
 	}
@@ -20,4 +21,17 @@ public class FullTimeEmployee extends Employee {
 	public String toString(String name, String lastname, String social_security) {
 		return social_security + "| " + name + " " + lastname;
 	}
+	
+	//Returns the name of the FullTimeEmployee position.
+	@Override
+	public String getPosition() {
+		return "Full Time Employee";
+	}
+	
+	//super.toString() gives the name, social number with the getters. And the FullTimeEmployee adds the position (job role) and salary.
+	@Override
+	public String toString() {
+		return super.toString() + "\nPosition: "  +  getPosition() + "\nBase Salary: " + salary + " Euro";
+	}
+	
 }

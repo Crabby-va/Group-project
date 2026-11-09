@@ -46,6 +46,16 @@ public abstract class Employee {
 	//Abstract methods for all of the employees to utilize 
 	public abstract double income();
 	public abstract String toString(String name, String lastname, String social_security);
-	
+
+
+	//For every employee type to give the name of their position
+	public abstract String getPosition();
+
+	//To override toString(). So it returns the data that every employee contains. The object data, not the package/separator "@"/hash code.
+	@Override
+	public String toString() {
+		return "Name: " + getName()  + " " + getLastname() + "\nSocial Number: " + getSSN();
+	}
+		
 }
 

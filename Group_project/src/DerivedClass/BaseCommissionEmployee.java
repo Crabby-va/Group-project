@@ -18,4 +18,15 @@ public class BaseCommissionEmployee extends CommissionEmployee {
 		return social_security + "| " + name + " " + lastname;
 	}
 	
+	//For overriding the parent's position name.
+	@Override
+	public String getPosition() {
+		return "Base Employee with commission";
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "\nBase salary: " + " euro (10% of the base salary)";
+	}
+	
 }
