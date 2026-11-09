@@ -2,6 +2,9 @@ package DerivedClass;
 
 public class BaseCommissionEmployee extends CommissionEmployee {
 	
+	private final double BASE_SALARY = 1000; //The fixed base salary in euros.
+	private final double BONUS_RATE = 0.10; //The added bonus 10% from the base salary.
+	
 	
 	//Constructor - when adding new instance variables please change the constructor accordingly!!!
 	public BaseCommissionEmployee(String name, String lastname, String SSN, int sales_amount) {
@@ -9,9 +12,9 @@ public class BaseCommissionEmployee extends CommissionEmployee {
 	}
 
 	//the inhereted method from employee abstract class
-	public double income() {
-		return 0;
-	}
+	public double income() {//For calculating base salary + commission + 10% bonus.
+		return BASE_SALARY + super.income() + BASE_SALARY * BONUS_RATE;
+		}
 	
 	//another inhereted method from employee abstract class
 	public String toString(String name, String lastname, String social_security) {

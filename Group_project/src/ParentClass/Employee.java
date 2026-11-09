@@ -6,6 +6,7 @@ public abstract class Employee {
 	private String name;
 	private String lastname;
 	private String SSN; //social security number
+	private String contract; //ADDED: type of contract (Seasonal or Annual)
 	
 	
 	//NAME setters and getters
@@ -35,6 +36,15 @@ public abstract class Employee {
 		SSN = sSN;
 	}
 	
+	//ADDED: contract setters and getters
+	public String getContract() {
+		return contract;
+	}
+
+	public void setContract(String contract) {
+		this.contract = contract;
+	}
+	
 	//Custom made constructor that will utilize the setters conditions as well!!
 	public Employee(String name, String lastname, String SSN) {
 		super();
@@ -58,4 +68,3 @@ public abstract class Employee {
 	}
 		
 }
-
