@@ -14,7 +14,7 @@ public class FullTimeEmployee extends Employee {
 	//the inhereted method from employee abstract class
 	@Override
 	public double income() {
-		return 0;
+		return salary;
 	}
 	
 	//another inhereted method from employee abstract class
